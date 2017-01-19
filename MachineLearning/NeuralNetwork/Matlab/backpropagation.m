@@ -6,7 +6,7 @@ function [Network, prediction] = backpropagation(input, output, iteration, alpha
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Backpropagation 1 vs all, using sigmoid bipolar activation function
 	% based on gradient descent for minimize the error 
-	% pull 2
+	% 
 	% author : ilham Kusuma
 	%
 	% input : matrix P x M, P is number of sample
