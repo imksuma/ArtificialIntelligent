@@ -2,7 +2,7 @@
 % [Network, prediction] = backpropagationSBGD([1 1; 1 -1; -1 1; -1 -1], [-1 1; 1 -1; 1 -1; -1 1], 1000, 0.05, 0.0004, [2 2 2])
 % [Network, prediction] = backpropagationSBGD([1 1; 1 -1; -1 1; -1 -1], [-1; 1; 1; -1], 1000, 0.05, 0.0004, [2 2 2])
 % [Network, prediction] = backpropagationSBGD([1;0.9;0.8;0.7;0.6;0.5;0.4;0.3;0.2;0.1; 0;-0.1;-0.2;0.-0.3;-0.4;-0.5;-0.6;-0.7;-0.8;-0.9;-1], [1; 1; 1; 1;-1; 1; 1;-1;-1;-1;-1; -1; -1;  -1;  1;  1; -1;  1;  1;  1; 1], 1000, 0.05, 0.0004, [1 9 1])
-function [Network, prediction] = backpropagationSBGD(input, output, iteration, alpha, tol, Layer)
+function [Network, prediction] = backpropagation(input, output, iteration, alpha, tol, Layer)
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Backpropagation 1 vs all, using sigmoid bipolar activation function
 	% based on gradient descent for minimize the error 
