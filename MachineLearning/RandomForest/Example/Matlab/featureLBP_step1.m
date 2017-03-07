@@ -1,5 +1,3 @@
-% 
-
 clc;close all;clear all;
 
 path = 'E';
